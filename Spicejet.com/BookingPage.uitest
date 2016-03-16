@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="3efe829a-76df-439e-af0d-8d5c62727a1e" AssemblyVersion="10.0.21008.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.9600.18098" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" Value="no" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="yes" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="70912" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Microsoft Windows 8.1 Enterprise" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 6.3.9600.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="False" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="False" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1033" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1033" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1600" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="900" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="96" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="96" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="1" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="5" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers">
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="UIA" WarningLevel="1" />
+    </Group>
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions />
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="BookingPage">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="CheapAirTicketsOnlinWindow" FriendlyName="Cheap Air Tickets Online, International Flights to..." SpecialControlType="BrowserWindow" SessionId="657394">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | Sp</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | Sp</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="CheapAirTicketsOnlinDocument" FriendlyName="Cheap Air Tickets Online, International Flights to..." SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | Sp</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | SpiceJet Airlines</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/Select.aspx</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://book.spicejet.com/Select.aspx</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Pane" Id="WrapperPane" FriendlyName="wrapper" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | Sp</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">wrapper</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Modify Search
+
+
+
+
+
+
+
+Round Trip</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="wrapper"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">19</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Pane" Id="ItemPane" FriendlyName="" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>Cheap Air Tickets Online, International Flights to India, Cheap International Flight Deals | Sp</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                          <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="InnerText" />
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Class">step2 hide-mobile</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="step2 hide-mobile"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">56</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+        <TopLevelWindow ControlType="Window" Id="SpiceJetFlightBookinWindow" FriendlyName="SpiceJet - Flight Booking for Domestic and Interna..." SpecialControlType="BrowserWindow" SessionId="263354">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="SpiceJetFlightBookinDocument" FriendlyName="SpiceJet - Flight Booking for Domestic and Interna..." SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://spicejet.com/</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="ComboBox" Id="AdultComboBox" FriendlyName="Adult" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                      <PropertyCondition Name="TagName">SELECT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_ddl_Adult</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00$mainContent$ddl_Adult</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Size">0</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="ItemCount">9</PropertyCondition>
+                      <PropertyCondition Name="Class">wMed1s required</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00$mainContent$ddl_Adult" class</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>

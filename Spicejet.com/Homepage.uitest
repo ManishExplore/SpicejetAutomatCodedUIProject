@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<UITest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="" Id="3efe829a-76df-439e-af0d-8d5c62727a1e" AssemblyVersion="10.0.21008.0" Version="1.0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamTest/UITest/2010">
+  <Configuration>
+    <Group Name="IE">
+      <Setting Name="Version" Value="9.11.9600.18053" WarningLevel="1" />
+      <Setting Name="InformationBar" WarningLevel="1" />
+      <Setting Name="AutoCompletePassword" WarningLevel="1" />
+      <Setting Name="AutoCompleteForm" Value="no" WarningLevel="1" />
+      <Setting Name="DefaultBrowser" Value="IEXPLORE.EXE" WarningLevel="1" />
+      <Setting Name="PopupBlocker" Value="yes" WarningLevel="1" />
+      <Setting Name="TabbedBrowsing" WarningLevel="2" />
+      <Setting Name="InternetZoneSecurity" Value="66816" WarningLevel="2" />
+      <Setting Name="IntranetZoneSecurity" Value="69632" WarningLevel="2" />
+      <Setting Name="TrustedZoneSecurity" Value="70912" WarningLevel="2" />
+      <Setting Name="RestrictedZoneSecurity" Value="73728" WarningLevel="2" />
+      <Setting Name="PhishingFilter" WarningLevel="1" />
+      <Setting Name="EnhancedSecurityConfiguration" WarningLevel="1" />
+    </Group>
+    <Group Name="OS">
+      <Setting Name="Name" Value="Microsoft Windows 8.1 Enterprise" WarningLevel="2" />
+      <Setting Name="Version" Value="Microsoft Windows NT 6.3.9600.0" WarningLevel="2" />
+      <Setting Name="IsUserAdmin" Value="False" WarningLevel="2" />
+      <Setting Name="Is64BitOperatingSystem" Value="True" WarningLevel="2" />
+      <Setting Name="IsTerminalServerSession" Value="False" WarningLevel="2" />
+      <Setting Name="OSLanguage" Value="1033" WarningLevel="1" />
+      <Setting Name="UserLocale" Value="1033" WarningLevel="1" />
+      <Setting Name="DragFullWindows" Value="True" WarningLevel="2" />
+      <Setting Name="ScreenResolutionWidth" Value="1600" WarningLevel="2" />
+      <Setting Name="ScreenResolutionHeight" Value="900" WarningLevel="2" />
+      <Setting Name="SystemDPIX" Value="96" WarningLevel="2" />
+      <Setting Name="SystemDPIY" Value="96" WarningLevel="2" />
+      <Setting Name="Aero" Value="1" WarningLevel="1" />
+      <Setting Name="UACEnabled" Value="1" WarningLevel="2" />
+      <Setting Name="UACPromptEnabled" Value="5" WarningLevel="1" />
+    </Group>
+    <Group Name="TechnologyManagers">
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="Web" WarningLevel="1" />
+      <Setting Name="UIA" WarningLevel="1" />
+    </Group>
+  </Configuration>
+  <InitializeActions />
+  <ExecuteActions>
+    <AssertAction UIObjectName="Homepage.SpiceJetFlightBookinWindow.SpiceJetFlightBookinDocument.HeaderPane.SpiceJetHyperlink">
+      <ParameterName />
+      <PropertyName>TagName</PropertyName>
+      <ExpectedValue>A</ExpectedValue>
+      <MessageOnValidationFailure>Url is opening</MessageOnValidationFailure>
+      <Type>String</Type>
+      <PropertyCondition>AreEqual</PropertyCondition>
+    </AssertAction>
+    <TestStepMarkerAction Comment="" MarkerInformation="VerifyBrowserLaunchSuccess">
+      <ParameterName />
+      <StepId>-1</StepId>
+      <Direction>Start</Direction>
+      <Outcome />
+      <Disabled>false</Disabled>
+      <WorkItemId>0</WorkItemId>
+      <MarkerRegionType>Assertion</MarkerRegionType>
+    </TestStepMarkerAction>
+  </ExecuteActions>
+  <CleanupActions />
+  <OnErrorActions />
+  <Maps>
+    <UIMap Id="Homepage">
+      <TopLevelWindows>
+        <TopLevelWindow ControlType="Window" Id="SpiceJetFlightBookinWindow" FriendlyName="SpiceJet - Flight Booking for Domestic and Interna..." SpecialControlType="BrowserWindow" SessionId="66804">
+          <TechnologyName>MSAA</TechnologyName>
+          <WindowTitles>
+            <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+          </WindowTitles>
+          <SearchConfigurations>
+            <SearchConfiguration>VisibleOnly</SearchConfiguration>
+          </SearchConfigurations>
+          <AndCondition Id="SearchCondition">
+            <PropertyCondition Name="Name">SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</PropertyCondition>
+            <PropertyCondition Name="ClassName">IEFrame</PropertyCondition>
+            <PropertyCondition Name="ControlType">Window</PropertyCondition>
+          </AndCondition>
+          <SupportLevel>1</SupportLevel>
+          <Descendants>
+            <UIObject ControlType="Document" Id="SpiceJetFlightBookinDocument" FriendlyName="SpiceJet - Flight Booking for Domestic and Interna..." SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://spicejet.com/</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Pane" Id="HeaderPane" FriendlyName="header" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">header</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Reservations (24/7) 
+
++91 987 180 3333</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="header"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">5</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="SpiceJetHyperlink" FriendlyName="SpiceJet" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText" />
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/Default.aspx</PropertyCondition>
+                          <PropertyCondition Name="Title">SpiceJet</PropertyCondition>
+                          <PropertyCondition Name="Href">http://spicejet.com/Default.aspx</PropertyCondition>
+                          <PropertyCondition Name="Class">spicejet_logo</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">title="SpiceJet" class="spicejet_logo" h</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="Smoothmenu1Pane" FriendlyName="smoothmenu1" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">smoothmenu1</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">About Us   
+
+Corporate Overview 
+
+
+</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">ddsmoothmenu</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="ddsmoothmenu" id="smoothmenu1"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">11</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="AboutUsHyperlink" FriendlyName="About Us " SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">About Us   </PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">void(0);</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">javascript:void(0);</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">href="javascript:void(0);"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                    <UIObject ControlType="Hyperlink" Id="ContactUsHyperlink" FriendlyName="Contact Us " SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Contact Us   </PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">void(0);</PropertyCondition>
+                          <PropertyCondition Name="Title">Contact Us</PropertyCondition>
+                          <PropertyCondition Name="Href">javascript:void(0);</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">title="Contact Us" href="javascript:void</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">8</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Table" Id="Ctl00_mainContent_rbTable" FriendlyName="ctl00_mainContent_rbtnl_Trip" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Table</PropertyCondition>
+                      <PropertyCondition Name="TagName">TABLE</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_rbtnl_Trip</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Round Trip
+
+One Way</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="tblTrip" id="ctl00_mainContent_rbtnl_Trip" border="0"</PropertyCondition>
+                      <PropertyCondition Name="RowCount">1</PropertyCondition>
+                      <PropertyCondition Name="ColumnCount">2</PropertyCondition>
+                      <PropertyCondition Name="Class">tblTrip</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Label" Id="RoundTripLabel" FriendlyName="Round Trip" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Label</PropertyCondition>
+                          <PropertyCondition Name="TagName">LABEL</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="LabelFor">ctl00_mainContent_rbtnl_Trip_0</PropertyCondition>
+                          <PropertyCondition Name="InnerText">Round Trip</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">for="ctl00_mainContent_rbtnl_Trip_0"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">1</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                    <UIObject ControlType="Label" Id="OneWayLabel" FriendlyName="One Way" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Label</PropertyCondition>
+                          <PropertyCondition Name="TagName">LABEL</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="LabelFor">ctl00_mainContent_rbtnl_Trip_1</PropertyCondition>
+                          <PropertyCondition Name="InnerText">One Way</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">for="ctl00_mainContent_rbtnl_Trip_1"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">2</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Edit" Id="CTXTEdit" FriendlyName="CTXT" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_ddl_originStation1_CTXT</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00_mainContent_ddl_originStation1_CTXT</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">select_CTXT</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00_mainContent_ddl_originStatio</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">12</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="CTXTEdit2" FriendlyName="CTXT" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_ddl_destinationStation1_CTXT</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00_mainContent_ddl_destinationStation1_CTXT</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">select_CTXT</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00_mainContent_ddl_destinationS</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">14</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Pane" Id="DropdownGroup1Pane" FriendlyName="dropdownGroup1" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">dropdownGroup1</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">India
+
+
+Agartala (IXA)
+
+
+Ahmedabad</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="dropdownGroup1"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">38</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="GoaGOIHyperlink" FriendlyName="Goa (GOI)" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Goa (GOI)</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">http://spicejet.com/#</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">onclick="javascript:$CityDropDown.SetSel</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">13</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Pane" Id="DropdownGroup1Pane2" FriendlyName="dropdownGroup1" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">dropdownGroup1</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">India
+
+
+Ahmedabad (AMD)
+
+
+Amritsar</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class" />
+                      <PropertyCondition Name="ControlDefinition">id="dropdownGroup1"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">48</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="MumbaiBOMHyperlink" FriendlyName="Mumbai (BOM)" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">Mumbai (BOM)</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">http://spicejet.com/#</PropertyCondition>
+                          <PropertyCondition Name="Class" />
+                          <PropertyCondition Name="ControlDefinition">onclick="javascript:$CityDropDown.SetSel</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">18</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Edit" Id="FromdateEdit" FriendlyName="Fromdate" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_txt_Fromdate</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00$mainContent$txt_Fromdate</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">custom_date_pic required picker-first home-date-pick hasDatepicker valid</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00$mainContent$txt_Fromdate" cl</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">16</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Edit" Id="TodateEdit" FriendlyName="Todate" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Edit</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_txt_Todate</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00$mainContent$txt_Todate</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Type">SINGLELINE</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">custom_date_pic required home-date-pick hasDatepicker</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00$mainContent$txt_Todate" clas</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">17</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="Pane" Id="UidatepickerdivPane" FriendlyName="ui-datepicker-div" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">ui-datepicker-div</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Prev
+
+November 2015
+
+
+Su
+
+Mo
+
+T</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2" id="ui-datepicker-div" style="left: 419.44px; top: 277px; width: 34em; display: block; position: absolute; z-index: 14;"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">466</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="Item31Hyperlink" FriendlyName="31" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">31</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">http://spicejet.com/#</PropertyCondition>
+                          <PropertyCondition Name="Class">ui-state-default</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="ui-state-default" href="#"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">34</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+                <UIObject ControlType="Button" Id="FindFlightsButton" FriendlyName="Find Flights" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Button</PropertyCondition>
+                      <PropertyCondition Name="TagName">INPUT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_btn_FindFlights</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00$mainContent$btn_FindFlights</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="DisplayText">Find Flights</PropertyCondition>
+                      <PropertyCondition Name="Type">submit</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">buttonN</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00$mainContent$btn_FindFlights"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">22</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+                <UIObject ControlType="ComboBox" Id="AdultComboBox" FriendlyName="Adult" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">ComboBox</PropertyCondition>
+                      <PropertyCondition Name="TagName">SELECT</PropertyCondition>
+                      <PropertyCondition Name="Id">ctl00_mainContent_ddl_Adult</PropertyCondition>
+                      <PropertyCondition Name="Name">ctl00$mainContent$ddl_Adult</PropertyCondition>
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="LabeledBy" />
+                      <PropertyCondition Name="Size">0</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="ItemCount">9</PropertyCondition>
+                      <PropertyCondition Name="Class">wMed1s required</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">name="ctl00$mainContent$ddl_Adult" class</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">3</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants />
+                </UIObject>
+              </Descendants>
+            </UIObject>
+            <UIObject ControlType="Document" Id="UISpiceJetFlightBookinDocument" FriendlyName="SpiceJet - Flight Booking for Domestic and Interna..." SpecialControlType="None">
+              <TechnologyName>Web</TechnologyName>
+              <WindowTitles>
+                <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+              </WindowTitles>
+              <AndCondition Id="SearchCondition">
+                <AndCondition Id="Primary">
+                  <PropertyCondition Name="ControlType">Document</PropertyCondition>
+                  <PropertyCondition Name="TagName">BODY</PropertyCondition>
+                  <PropertyCondition Name="Id" />
+                  <PropertyCondition Name="RedirectingPage">False</PropertyCondition>
+                  <PropertyCondition Name="FrameDocument">False</PropertyCondition>
+                </AndCondition>
+                <FilterCondition Id="Secondary">
+                  <PropertyCondition Name="Title">SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</PropertyCondition>
+                  <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                  <PropertyCondition Name="PageUrl">http://www.spicejet.com/</PropertyCondition>
+                </FilterCondition>
+              </AndCondition>
+              <SupportLevel>0</SupportLevel>
+              <Descendants>
+                <UIObject ControlType="Pane" Id="UidatepickerdivPane" FriendlyName="ui-datepicker-div" SpecialControlType="None">
+                  <TechnologyName>Web</TechnologyName>
+                  <WindowTitles>
+                    <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                  </WindowTitles>
+                  <AndCondition Id="SearchCondition">
+                    <AndCondition Id="Primary">
+                      <PropertyCondition Name="ControlType">Pane</PropertyCondition>
+                      <PropertyCondition Name="TagName">DIV</PropertyCondition>
+                      <PropertyCondition Name="Id">ui-datepicker-div</PropertyCondition>
+                      <PropertyCondition Name="Name" />
+                    </AndCondition>
+                    <FilterCondition Id="Secondary">
+                      <PropertyCondition Name="InnerText">Prev
+
+November 2015
+
+
+Su
+
+Mo
+
+T</PropertyCondition>
+                      <PropertyCondition Name="Title" />
+                      <PropertyCondition Name="Class">ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2</PropertyCondition>
+                      <PropertyCondition Name="ControlDefinition">class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2" id="ui-datepicker-div" style="left: 419.44px; top: 277px; width: 34em; display: block; position: absolute; z-index: 14;"</PropertyCondition>
+                      <PropertyCondition Name="TagInstance">448</PropertyCondition>
+                    </FilterCondition>
+                  </AndCondition>
+                  <SupportLevel>0</SupportLevel>
+                  <Descendants>
+                    <UIObject ControlType="Hyperlink" Id="Item30Hyperlink" FriendlyName="30" SpecialControlType="None">
+                      <TechnologyName>Web</TechnologyName>
+                      <WindowTitles>
+                        <WindowTitle>SpiceJet - Flight Booking for Domestic and International, Cheap Air Tickets</WindowTitle>
+                      </WindowTitles>
+                      <AndCondition Id="SearchCondition">
+                        <AndCondition Id="Primary">
+                          <PropertyCondition Name="ControlType">Hyperlink</PropertyCondition>
+                          <PropertyCondition Name="TagName">A</PropertyCondition>
+                          <PropertyCondition Name="Id" />
+                          <PropertyCondition Name="Name" />
+                          <PropertyCondition Name="Target" />
+                          <PropertyCondition Name="InnerText">30</PropertyCondition>
+                        </AndCondition>
+                        <FilterCondition Id="Secondary">
+                          <PropertyCondition Name="AbsolutePath">/</PropertyCondition>
+                          <PropertyCondition Name="Title" />
+                          <PropertyCondition Name="Href">http://www.spicejet.com/#</PropertyCondition>
+                          <PropertyCondition Name="Class">ui-state-default</PropertyCondition>
+                          <PropertyCondition Name="ControlDefinition">class="ui-state-default" href="#"</PropertyCondition>
+                          <PropertyCondition Name="TagInstance">14</PropertyCondition>
+                        </FilterCondition>
+                      </AndCondition>
+                      <SupportLevel>0</SupportLevel>
+                      <Descendants />
+                    </UIObject>
+                  </Descendants>
+                </UIObject>
+              </Descendants>
+            </UIObject>
+          </Descendants>
+        </TopLevelWindow>
+      </TopLevelWindows>
+    </UIMap>
+  </Maps>
+  <ValueMap>
+    <ParameterList />
+  </ValueMap>
+</UITest>
